@@ -1,0 +1,23 @@
+version = 0.1
+
+[default]
+[default.deploy]
+stack_name = "oracle-erp-filelock"
+s3_bucket = "dcli-oracle-erp-filelock"
+s3_prefix = "oracle-erp-filelock"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = ""
+resolve_s3 = true
+image_repositories = []
+
+[default.deploy.parameters]
+stack_name = "oracle-erp-filelock"
+resolve_s3 = true
+s3_prefix = "oracle-erp-filelock"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []
