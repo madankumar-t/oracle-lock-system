@@ -70,7 +70,6 @@ SAM Template Reference (template.yaml)
 Ensure your template.yaml includes:
 
 ```
-
 Resources:
   OracleLockFunction:
     Type: AWS::Serverless::Function
@@ -84,5 +83,6 @@ Resources:
           Properties:
             Path: /lock
             Method: post
+
 
 ```
