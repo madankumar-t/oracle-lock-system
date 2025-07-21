@@ -66,23 +66,3 @@ sam local start-api
 Then access it at:
 http://127.0.0.1:3000/lock or .../unlock
 
-SAM Template Reference (template.yaml)
-Ensure your template.yaml includes:
-
-```
-Resources:
-  OracleLockFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      CodeUri: lambda/
-      Handler: lambda_handler.lambda_handler
-      Runtime: python3.8
-      Events:
-        LockAPI:
-          Type: Api
-          Properties:
-            Path: /lock
-            Method: post
-
-
-```
