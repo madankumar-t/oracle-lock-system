@@ -84,4 +84,5 @@ Resources:
           Properties:
             Path: /lock
             Method: post
+
 ```
